@@ -1,0 +1,237 @@
+body {
+  font-family: 'Metropolis', Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display';
+}
+
+/* Headline */
+.headline,
+.features,
+.contact {
+  background: url('../images/micro_carbon.png') repeat;
+}
+.headline,
+.logos,
+.testimonials,
+.social-icons,
+.features,
+.process,
+.contact {
+  padding: 100px 0;
+  background-color: #000;
+  color: #fff;
+}
+.headline li,
+.testimonials li,
+.testimonials p,
+.features p,
+.process p {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.headline ul {
+  margin-bottom: 60px;
+}
+/* Logos */
+.logos,
+.testimonials,
+.social-icons,
+.process {
+  background-color: #fff;
+  color: #212529;
+}
+.logos h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.logo-wrapper {
+  max-width: 100px;
+  margin: 0 24px;
+}
+.logos img {
+  object-fit: cover;
+}
+/* Testimonials */
+.testimonials {
+  background-color: #f9f9f9;
+}
+.testimonials iframe {
+  width: 100%;
+  height: 320px;
+}
+/* Social Icons */
+.social-icons {
+  text-align: center;
+}
+.social-icons img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto 16px;
+}
+.social-icons blockquote {
+  max-width: 300px;
+  font-size: 18px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.headline .btn,
+.social-icons .btn,
+.features .btn {
+  width: 400px;
+  font-size: 28px;
+  padding: 12px 24px;
+}
+.features p,
+.process p.mx-auto {
+  max-width: 960px;
+  margin-bottom: 30px;
+}
+/* Features */
+.features .card {
+  min-height: 240px;
+  margin-bottom: 30px;
+  color: #212529;
+}
+/* Process */
+.process .accordion-item {
+  border: none;
+}
+.process .accordion-header {
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.process .accordion-button {
+  letter-spacing: 1px;
+}
+.process .accordion-button:not(.collapsed) {
+  color: #212529;
+}
+.process .accordion-button:focus {
+  background-color: #f2f2f2;
+  box-shadow: none;
+}
+.process #process-step__one,
+.process #process-step__two {
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding-bottom: 60px;
+}
+/* Contact */
+.contact {
+  color: #fff;
+}
+.contact .form-control,
+.contact .form-select {
+  color: #555;
+}
+.site-footer {
+  background-color: #212529;
+  text-align: center;
+  padding: 15px 0;
+  color: #fff;
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .headline .btn,
+  .social-icons .btn,
+  .features .btn {
+    width: auto;
+    font-size: 24px;
+  }
+  .logos img,
+  .social-icons img {
+    max-width: 75px;
+  }
+  .logo-wrapper {
+    margin: 0 10px 10px;
+  }
+  .testimonials iframe {
+    height: 200px;
+  }
+  .features .card {
+    min-height: 260px;
+  }
+  .contact .fs-5 {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .headline,
+  .logos,
+  .testimonials,
+  .social-icons,
+  .features,
+  .process,
+  .contact {
+    padding: 50px 0;
+  }
+  .headline img {
+    max-width: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+  .headline ul {
+    margin-bottom: 30px;
+  }
+  .headline li,
+  .testimonials li,
+  .testimonials p,
+  .features p {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .logos h2 {
+    margin-bottom: 30px;
+  }
+  .logo-wrapper {
+    margin: 0 16px 16px;
+  }
+  .logos img {
+    max-width: 60px;
+  }
+  .testimonials iframe {
+    height: 200px;
+    margin-bottom: 8px;
+  }
+  .headline .btn,
+  .social-icons .btn,
+  .features .btn {
+    width: 100%;
+    font-size: 22px;
+    padding: 12px 24px;
+  }
+  .features .card {
+    min-height: auto;
+    margin-bottom: 16px;
+  }
+  .features p {
+    margin-bottom: 16px;
+  }
+  .process p {
+    font-size: 16px;
+  }
+  .process #process-step__one,
+  .process #process-step__two {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border: none;
+  }
+  .contact .fs-5 {
+    font-size: 0.9rem !important;
+  }
+}
